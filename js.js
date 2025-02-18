@@ -12,9 +12,10 @@ var map = L.map('map', {
     maxBounds: [[-90, -180], [90, 180]]
 });
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '&copy; Esri'
+  }).addTo(map);
+  
 
 L.marker([13.0843, 80.2705]).addTo(map).bindPopup("<b> Chennai </b>").openPopup();
 
