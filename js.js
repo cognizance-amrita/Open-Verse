@@ -16,7 +16,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-L.marker([13.0843, 80.2705]).addTo(map);
+L.marker([13.0843, 80.2705]).addTo(map).bindPopup("<b> Chennai </b>").openPopup();
 
 function updateMap() {
     var lat = parseFloat(document.getElementById("latitude").value);
