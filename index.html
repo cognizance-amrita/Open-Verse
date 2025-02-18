@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="icon" href="assets\logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <title>Open Verse</title>
+</head>  
+
+<body>
+<!-- ================================================== Main ================================================== -->
+
+    <div class="title">Open Verse</div>
+
+    <div class="coordinates">
+      
+        <div class="q">
+            <img id="question-image" src="assets/1.png" alt="Question">
+        </div>
+        
+        <div id="map" class="map_display"></div>
+
+    </div>
+
+    <div class="qd"><a id="download-link" href="https://drive.google.com/file/d/1C2ip4NljJcFp0XBl3OIsCCTFRAsNFOnm/view?usp=sharing" target="_blank">Download</a></div>
+
+    <table>
+        <tr>
+            <td>Longitude (X) </td>
+            <td><input type="text" id="longitude"></td>
+        </tr>
+
+        <tr>
+            <td>Latitude (Y) </td>
+            <td><input type="text" id="latitude"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><button onclick="updateMap()">Visit</button></td>
+        </tr>
+    </table>
+        
+<!-- ======================================================================================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>     
+<script src="js.js" defer></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+
+</html>
