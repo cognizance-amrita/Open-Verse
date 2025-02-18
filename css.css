@@ -24,11 +24,13 @@ body{
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    font-weight: bold;
 }
 
 .title{
-margin-top: 20px;
-font-size: xx-large;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
